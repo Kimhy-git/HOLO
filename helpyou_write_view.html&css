@@ -1,0 +1,207 @@
+//HTML
+
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="resources/css/common.css">
+<link rel="stylesheet" href="resources/css/helpyou_write_view.css">
+<body>
+ <header>
+        <nav>
+           <a href="login" id=login>로그인</a>
+            <a href="join" id="join">회원가입</a>
+        </nav>
+        <div id="logo">
+            <a href="main"><img src="resources/img/logo1.png"></a>
+        </div>
+        <h2>도움주기</h2>
+        <div id="search">
+            <select id="area">
+                <option value="서울">서울</option>
+                <option value="경기">경기</option>
+                <option value="인천">인천</option>
+                <option value="대전">대전</option>
+                <option value="대구">대구</option>
+                <option value="부산">부산</option>
+                <option value="강원">강원</option>
+                <option value="경남">경남</option>
+                <option value="경북">경북</option>
+                <option value="울산">울산</option>
+                <option value="광주">광주</option>
+                <option value="전남">전남</option>
+                <option value="전북">전북</option>
+                <option value="세종">세종</option>
+                <option value="충남">충남</option>
+                <option value="충북">충북</option>
+                <option value="제주">제주</option>
+            </select>
+            <input type="text" id="search_txt">
+            <input type="button" id="search_btn" value="검색">
+        </div>
+        <div id=write><a href="helpyou_write">글쓰기</a></div>
+    </header>
+    <section>
+        <div id="wrap">
+            <table id="first">
+                <tr>
+                    <td>제목</td>
+                    <td>제목테스트</td>
+                </tr>
+                <tr>
+                    <td>닉네임</td>
+                    <td>닉</td>
+                </tr>
+                <tr>
+                    <td>작성날짜</td>
+                    <td>2020.12.21 15:30</td>
+                </tr>
+                <tr>
+                    <td>태그</td>
+                    <td><div id="choice">
+                        <select id="area">
+                            <option value="서울">서울</option>
+                            <option value="경기">경기</option>
+                            <option value="인천">인천</option>
+                            <option value="대전">대전</option>
+                            <option value="대구">대구</option>
+                            <option value="부산">부산</option>
+                            <option value="강원">강원</option>
+                            <option value="경남">경남</option>
+                            <option value="경북">경북</option>
+                            <option value="울산">울산</option>
+                            <option value="광주">광주</option>
+                            <option value="전남">전남</option>
+                            <option value="전북">전북</option>
+                            <option value="세종">세종</option>
+                            <option value="충남">충남</option>
+                            <option value="충북">충북</option>
+                            <option value="제주">제주</option>
+                        </select>
+                        <select id="job">
+                            <option value="벌레잡기">벌레잡기</option>
+                            <option value="줄서주기">줄서주기</option>
+                            <option value="대리전화">대리전화</option>
+                            <option value="기타">기타</option>
+                        </select>
+                    </div></td>
+                </tr>
+                <tr>
+                    <td>글내용</td>
+                </tr>
+            </table>
+            <table id="second">
+            	<tr>                
+                    <td><textarea id="content" cols="130" rows="40" readonly></textarea></td>
+                </tr>
+            </table>
+            <div id="form-commentInfo"> 
+                <div id="comment-count">댓글 <span id="count">0</span></div> 
+                <div id=cc><input id="comment-input" placeholder="댓글을 입력해 주세요." > 
+                <button id="submit">등록</button> </div>
+            </div> 
+            <div id=comments> </div>
+
+            <div id="btn">
+                <input type="button" id="remove" value="삭제">
+                <input type="button" id="edit" value="수정">
+                <a href="helpyou_write"><input type="button" id="list" value="목록보기"></a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>copyright 홀로서기
+            alone@alone.co.kr</p>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+//CSS
+
+@charset "ISO-8859-1";
+section{
+    background-color: rgb(245, 232, 255)
+}
+#content textarea{
+    margin:0 auto;
+    width: 940px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-top: 10px;
+    resize: none;
+}
+table tr{
+	padding:5px;
+	padding-left:30px;
+}
+table tr td{
+	padding:5px;
+	padding-right:50px;
+}
+#wrap{
+    background-color: white;
+    width:1000px;
+}
+#form-commentInfo{
+	margin-top:30px;
+}
+#form-commentInfo, #btn, #comments{
+	width:300px;
+	padding-left:35px;
+	padding-bottom:5px;
+}
+#comment-count, #comment-input, #submit,
+#remove, #edit, #list{
+	padding:5px;
+}
+#comment-input{
+	width:790px;
+	height:100px;
+}
+#submit{
+	height:112px;
+	width:112px;
+	float:right;
+}
+#cc{
+	width:930px;
+}
+#btn input{
+	margin-right:5px;
+}
+#btn{
+	padding-top:3px;
+	padding-left:670px;
+}
+
+
+#first{
+	margin-left:30px;
+	width:700px;
+}
+#first tr td:first-child{
+	width:60px;
+}
+#second{
+	margin-left:30px;
+}
+
+#write{
+	padding:5px;
+	text-align:right;
+}
+#write a{
+	font-size:12pt;
+	padding:5px;
+}
