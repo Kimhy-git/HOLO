@@ -133,7 +133,7 @@
 section{
     background-color: rgb(245, 232, 255)
 }
-#content textarea{
+#content{
     margin:0 auto;
     width: 940px;
     border: 1px solid #ccc;
