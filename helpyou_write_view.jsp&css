@@ -131,7 +131,42 @@
 
 @charset "ISO-8859-1";
 section{
-    background-color: rgb(245, 232, 255)
+	background-color: rgb(245, 232, 255);
+	overflow-y:300px;
+}
+header #logo{
+    height: 100px;
+    float:left;
+}
+header #logo img{
+    width: 150px;
+    margin-top: 30px;
+}
+#move{
+	margin-top: 0;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+h2{
+	float: left;
+	padding: 5px 0 5px 0;
+	margin: 0;
+}
+#section_h{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	height: 50px;
+}
+#search{
+	padding: 10px 0 10px 0;
+	width: 370px;
+	float: left;
+	margin-left: 220px;
+}
+.write{
+    background-color: rgb(175, 107, 230);
+    margin-top: 7px;
+    float:right;
 }
 #content{
     margin:0 auto;
