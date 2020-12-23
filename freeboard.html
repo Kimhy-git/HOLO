@@ -1,0 +1,71 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="resources/css/common.css">
+<link rel="stylesheet" href="resources/css/freeboard_write_view.css">
+<body>
+ <header>
+        <nav>
+           <a href="login" id=login>로그인</a>
+            <a href="join" id="join">회원가입</a>
+        </nav>
+        <div id="logo">
+            <a href="main"><img src="resources/img/logo1.png"></a>
+        </div>
+        <h2>자유게시판</h2>
+        <div id="search">
+            <input type="text" id="search_txt">
+            <input type="button" id="search_btn" value="검색">
+        </div>
+        <div id=write><a href="freeboard_write">글쓰기</a></div>
+    </header>
+    <section>
+        <div id="wrap">
+            <table id="first">
+                <tr>
+                    <td>제목</td>
+                    <td>제목테스트</td>
+                </tr>
+                <tr>
+                    <td>닉네임</td>
+                    <td>닉</td>
+                </tr>
+                <tr>
+                    <td>작성날짜</td>
+                    <td>2020.12.21 15:30</td>
+                </tr>
+                <tr>
+                    <td>글내용</td>
+                </tr>
+            </table>
+            <table id="second">
+            	<tr>                
+                    <td><textarea id="content" cols="130" rows="40" readonly></textarea></td>
+                </tr>
+            </table>
+            <div id="form-commentInfo"> 
+                <div id="comment-count">댓글 <span id="count">0</span></div> 
+                <div id=cc><input id="comment-input" placeholder="댓글을 입력해 주세요." > 
+                <button id="submit">등록</button> </div>
+            </div> 
+            <div id=comments> </div>
+
+            <div id="btn">
+                <input type="button" id="remove" value="삭제">
+                <input type="button" id="edit" value="수정">
+                <a href="helpyou_write"><input type="button" id="list" value="목록보기"></a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>copyright 홀로서기
+            alone@alone.co.kr</p>
+    </footer>
+</body>
+</html>
