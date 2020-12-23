@@ -128,7 +128,7 @@
 
 //CSS
 @charset "ISO-8859-1";
-#content textarea{
+#content{
     margin:0 auto;
     width: 940px;
     border: 1px solid #ccc;
