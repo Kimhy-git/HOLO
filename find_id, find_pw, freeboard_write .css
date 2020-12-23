@@ -1,0 +1,132 @@
+//find_id
+
+@charset "EUC-KR";
+#wrap{
+    height: 500px;
+    text-align: center;
+}
+input{
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+#email{
+    margin-top: 220px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+#find{
+    width: 70px;
+}
+#wrap div a{
+    margin-right: 10px;
+    text-decoration: none;
+    color: rgb(107, 107, 107);
+}
+
+
+-------------------
+
+//find_pw
+
+@charset "EUC-KR";
+#wrap{
+    height: 500px;
+    text-align: center;
+    /* position: relative; */
+}
+input, select{
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 180px;
+}
+#id{
+    margin-top: 200px;
+    margin-left: 50px;
+    margin-bottom: 5px;
+}
+#choice{
+    margin-bottom: 5px;
+}
+#answer{
+    margin-bottom: 20px;
+}
+#find{
+    width: 90px;
+}
+#wrap a:last-child{
+    text-decoration: none;
+    display: block;
+    margin-top: 5px;
+    color: rgb(107, 107, 107);
+}
+
+
+------------
+
+//freeboard_write
+
+@charset "EUC-KR";
+#wrap{
+
+    background-color: white;
+}
+
+#wrap span{
+    margin-left: 30px;
+    
+}
+#wrap input{
+    margin-top: 50px;
+    margin-bottom: 10px;
+    width: 890px;
+    margin-left: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+#area{
+    width: 120px;
+    margin-left: 17px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+#job{
+    width: 120px;
+    margin-left: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+#content p{
+    margin-left: 30px;
+    margin-top: 10px;
+}
+#content textarea{
+    margin-left: 30px;
+    width: 940px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-top: 10px;
+    resize: none;
+}
+#img_up input{
+    margin: 0;
+    margin-top: 20px;
+    width: 300px;
+}
+
+#btn input{
+    width: 100px;
+    position: relative;
+    left: 758px;
+    margin: 0;
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    height: 30px;
+}
+#submit{
+    background-color: rgb(95, 143, 214);
+    border: 1px solid rgb(70, 114, 180);
+    color: white;
+}
+
+
