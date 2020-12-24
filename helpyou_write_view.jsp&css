@@ -14,38 +14,50 @@
 <body>
  <header>
         <nav>
-           <a href="login" id=login>로그인</a>
+            <a href="login" id=login>로그인</a>
             <a href="join" id="join">회원가입</a>
         </nav>
         <div id="logo">
             <a href="main"><img src="resources/img/logo1.png"></a>
         </div>
-        <h2>도움주기</h2>
-        <div id="search">
-            <select id="area">
-                <option value="서울">서울</option>
-                <option value="경기">경기</option>
-                <option value="인천">인천</option>
-                <option value="대전">대전</option>
-                <option value="대구">대구</option>
-                <option value="부산">부산</option>
-                <option value="강원">강원</option>
-                <option value="경남">경남</option>
-                <option value="경북">경북</option>
-                <option value="울산">울산</option>
-                <option value="광주">광주</option>
-                <option value="전남">전남</option>
-                <option value="전북">전북</option>
-                <option value="세종">세종</option>
-                <option value="충남">충남</option>
-                <option value="충북">충북</option>
-                <option value="제주">제주</option>
-            </select>
-            <input type="text" id="search_txt">
-            <input type="button" id="search_btn" value="검색">
+        <div id="move">
+            <a href="help_me">도움받기</a>
+            <a href="help_you">도움주기</a>
+            <a href="freeboard">자유게시판</a>
+            <a href="mypage">마이페이지</a>
         </div>
-        <div id=write><a href="helpyou_write">글쓰기</a></div>
     </header>
+    <div class="clear"></div>
+    <section>
+        <div id="center">
+            <div id="wrap">
+                <div id="section_h">
+                    <h2>도움 주기</h2>
+                    <div id="search">
+                        <select id="area">
+                            <option value="서울">서울</option>
+                            <option value="경기">경기</option>
+                            <option value="인천">인천</option>
+                            <option value="대전">대전</option>
+                            <option value="대구">대구</option>
+                            <option value="부산">부산</option>
+                            <option value="강원">강원</option>
+                            <option value="경남">경남</option>
+                            <option value="경북">경북</option>
+                            <option value="울산">울산</option>
+                            <option value="광주">광주</option>
+                            <option value="전남">전남</option>
+                            <option value="전북">전북</option>
+                            <option value="세종">세종</option>
+                            <option value="충남">충남</option>
+                            <option value="충북">충북</option>
+                            <option value="제주">제주</option>
+                        </select>
+                        <input type="text" id="search_txt">
+                        <input type="button" id="search_btn" value="검색">
+                    </div>
+                    <a href="helpyou_write" class="write">글쓰기</a>
+                </div>
     <section>
         <div id="wrap">
             <table id="first">
