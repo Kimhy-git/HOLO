@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mapper.mapper">
+
+	<select id="selectMember" resultType="dto">
+        select * from user;
+    </select>
+    
+    <!-- notice -->
+    <select id="select_post" resultType="dto_post"> 
+    	select * from post; 
+    </select>
+    
+    <!-- notice_write_view -->
+    <select id="select_post_view" resultType="dto_post_view"> 
+    	select * from post where board=0 and post_id=#{post_id}; 
+    </select>
+    
+    <!-- notice_write_view : comment -->
+    <select id="select_post_reply" resultType="dto_post_reply"> 
+    	select * from reply where board=0 and post_post_id=#{post_id}; 
+    </select>
+    
+    <!-- notice_write_view : delete posts -->
+    <select id="select_post_delete" resultType="dto_post_delete"> 
+    	delete from post where post_id=#{post_id} and board=0;
+    </select>
+    
+    <!-- notice_write_view : delete posts -->
+    <select id="select_reply_delete" resultType="dto_post_reply"> 
+    	delete from reply where post_post_id=#{post_id} and board=0;
+    </select>
+    
+</mapper>
